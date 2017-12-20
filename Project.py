@@ -1,9 +1,28 @@
-
 # coding: utf-8
 
 # Starting from the The Movie DataBase (TMDB) sample datasets
 # 
 # 1- For each movie, compute the number of cast members
+# 
+
+# In[1]:
+
+import pandas as pd
+import numpy as np
+
+
+# In[2]:
+
+movies= pd.read_csv('tmdb_5000_movies.csv')
+movies.head()
+
+
+# In[3]:
+
+credits= pd.read_csv('tmdb_5000_credits.csv')
+credits.head()
+
+
 # 2- How many movies do not have a homepage?
 # 3- For each year, how many movies do not have a homepage?
 # 4- Extract the domain of each homepage.
@@ -16,9 +35,11 @@
 # 11- For each decade, compute the company with maximum revenue
 # 12- In each year, how many movies have revenue smaller than the budget?
 # 
+# 
 # 1- Distribute the revenue according to the order of appearance in a movie. Assume that the i-th actor contributes twice as much as the (i+1)-th actor to the revenue.
 # 2- For each actor find the total revenue attributed to him/her.
 # 3- Find the actor that is responsible for the most overall revenue.
+# 
 # 
 # 1- For each movie, compute the ratio between males and females in the cast
 # 2- For each movie, compute the ratio between the attributed revenue of males and females in the cast
